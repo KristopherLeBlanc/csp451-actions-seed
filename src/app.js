@@ -14,7 +14,6 @@ app.get("/health", (req, res) => {
   });
 });
 
-
 module.exports = app;
 
 /* istanbul ignore next -- bootstrap; only runs when invoked as `node src/app.js` */
