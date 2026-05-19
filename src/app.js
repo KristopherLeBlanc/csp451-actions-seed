@@ -5,6 +5,12 @@ const app = express();
 app.get("/", (req, res) => {
   res.json({ status: "ok", message: "Hello from CSP-451" });
 });
+app.get("/health", (req, res) => {
+  res.json({
+    status: "healthy",
+    uptime: process.uptime(),
+  });
+});
 
 module.exports = app;
 
